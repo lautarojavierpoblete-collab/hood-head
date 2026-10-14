@@ -1,0 +1,36 @@
+Tiena online para Hood Head. estructura:
+
+hood-head/
+├── README.md                  # Qué es el proyecto y cómo levantarlo
+├── .gitignore                 # Qué archivos Git debe ignorar (builds, secretos)
+├── .gitattributes             # Normaliza saltos de línea entre sistemas
+├── .editorconfig              # Reglas de formato compartidas (indentación, etc.)
+├── global.json                # Fija la versión del SDK de .NET del proyecto
+│
+├── docs/
+│   ├── README.md              # Índice de la documentación
+│   ├── architecture/
+│   │   ├── overview.md        # Diagrama y descripción de las piezas
+│   │   └── decisions/         # ADRs: una decisión técnica por archivo
+│   ├── setup/
+│   │   └── requirements.md    # Herramientas y versiones verificadas
+│   ├── conventions.md         # Nombres, ramas, commits
+│   └── roadmap.md             # Etapas del proyecto
+│
+├── backend/
+│   ├── HoodHead.sln           # Solución: agrupa los proyectos de C#
+│   ├── src/
+│   │   └── HoodHead.Api/      # Web API (ASP.NET Core)
+│   └── tests/
+│       └── HoodHead.Api.Tests/
+│
+├── frontend/                  # Workspace de Angular (la tienda)
+│   └── src/app/
+│       ├── core/              # Servicios únicos de la app (config, auth, interceptores)
+│       ├── shared/            # Componentes y utilidades reutilizables
+│       └── features/          # Una carpeta por funcionalidad (catálogo, carrito...)
+│
+├── integrations/
+│   └── google-sheets/         # Código de Apps Script + README
+│
+└── .github/                   # CI (integración continua), recién en una etapa posterior

@@ -1,0 +1,14 @@
+﻿node_modules/
+dist/
+.angular/
+bin/
+obj/
+.vs/
+.vscode/
+.env
+.env.*
+!.env.example
+*.user
+*.suo
+.DS_Store
+Thumbs.db
