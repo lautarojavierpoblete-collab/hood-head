@@ -12,3 +12,10 @@ obj/
 *.suo
 .DS_Store
 Thumbs.db
+# Copias de seguridad de la base (contienen datos del negocio)
+backup_*.sql
+
+# Configuración local y secretos
+appsettings.*.local.json
+# Carga inicial con datos reales del negocio
+database/migrations/002_import_initial_data.sql
